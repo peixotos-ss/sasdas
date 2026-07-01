@@ -2,27 +2,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; /* Do primeiro código */
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; 
 }
 
 body{
     font-family: "Inter", sans-serif;
-    background-color: #001524;
+    background-color: white;
     min-height: 100vh;
     display: flex;
-    flex-direction: column; /* Do primeiro código */
+    flex-direction: column; 
     align-items: center;
     justify-content: center;
     height: auto;
 }
 
-/* Mantido o nome .container do segundo código, mas com o border-radius do primeiro */
+
 .container{
     position: relative;
     background-color: rgb(11, 50, 82);
     width: 300px;
     height: 350px;
-    border: 2px solid #ffecd1;
+    border: 2px solid red;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,16 +30,11 @@ body{
     gap: 2vh;
     padding: 10px;
     box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px;
-    border-radius: 8%; /* Do primeiro código (.formulario) */
-}
-
-/* Mesclado o .formulario caso você use essa classe no HTML em vez de .container */
-.formulario {
-    position: relative;
+    border-radius: 8%; 
     background-color: rgb(11, 50, 82);
     width: 300px;
     height: 370px;
-    border: 2px solid #ffecd1;
+    border: 2px solid red;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -56,23 +51,9 @@ body{
     height: 100px;
 }
 
-/* Mantido o .round do segundo, mas com propriedades de posicionamento do primeiro (.bola) */
-.round{
-    border-radius: 100%; /* O primeiro usava 10%, o segundo 100%. Mantido 100% para combinar com a logo */
-    width: 110px;
-    height: 110px;
-    border: 2px solid white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: -1%; /* Do primeiro código */
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px;
-}
 
-/* Adicionado o .bola caso use essa classe no HTML */
+
+
 .bola{
     border-radius: 10%;
     width: 110px;
@@ -88,7 +69,7 @@ body{
     box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px;
 }
 
-/* Corrigido o erro de digitação de 'lable' para 'label' */
+
 .wrap-input-label{
     display: flex;
     flex-direction: column;
@@ -99,7 +80,7 @@ body{
 }
 
 .eye{
-    background-color: transparent; /* Removido o fundo sólido do segundo código para não cobrir o input */
+    background-color: transparent; 
     position: absolute;
     right: 10px;
     bottom: 7px;
@@ -144,7 +125,7 @@ input:focus{
     padding: 10px;
     width: 81%;
     background-color: #ff7d00;
-    border-radius: 999px; /* Mantido o botão arredondado do segundo código */
+    border-radius: 999px; 
     border: none;
     border: 2px solid #001524;
     font-size: 20px;
@@ -161,7 +142,7 @@ input:focus{
     box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px;
 }
 
-/* Adicionado as duas variações de classe para a div de erro (.errorDiv e .error-div) */
+
 .error-div, .errorDiv{
     display: none;
     flex-direction: row;
@@ -173,7 +154,7 @@ input:focus{
     gap: 2vh;
     padding: 10px;
     position: absolute;
-    bottom: 5%; /* Mantido a porcentagem para melhor responsividade */
+    bottom: 5%; 
     font-size: 14px;
     font-weight: lighter;
     box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px;

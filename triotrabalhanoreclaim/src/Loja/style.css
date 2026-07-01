@@ -73,3 +73,14 @@ body{
         font-size: 16px;
     }
 }
+.card-body .adicionar {
+    background-color: #6c757d !important; 
+    border-color: #6c757d !important;
+    color: #fff !important;
+}
+
+
+.card-body .adicionar:hover {
+    background-color: #5a6268 !important; 
+    border-color: #545b62 !important;
+}
